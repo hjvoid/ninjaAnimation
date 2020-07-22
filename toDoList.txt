@@ -1,0 +1,4 @@
+Add timeout functions to animate ninja
+Add functions to "fight/sword swipe", "jump", "run"
+Sort out the plan on which he stands. 
+Sort out lighting/ Play witht the fog settings!
