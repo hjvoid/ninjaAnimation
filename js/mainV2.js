@@ -559,32 +559,16 @@ function panCameraIntro(){
 
 function swordSlashLeft(){
     // gsap.to(newNinja.rotation, .2, {y:1, delay: 1, ease: "back.out(1.7)"});
-    //arm grab
-    // gsap.to(newNinja.getObjectByName("bicepR").position, .1, {x:-11.5, y: -6, z: 2, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("bicepR").rotation, .1, {x:0.2, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("elbowR").position, .1, {x:-12.5, y: -0.4, z: 2.9, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("foreArmR").rotation, .1, {x:2.2, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("foreArmR").position, .1, {x:-12.5, y: 3, z: -1.2, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("handR").rotation, .1, {x:2.2, delay: 1, ease: "back.out(0.2)"});
-    // gsap.to(newNinja.getObjectByName("handR").position, .1, {x:-12.5, y: 7, z: -6.5, delay: 1, ease: "back.out(0.2)"});
-   //move arms
-    //right arm
-    gsap.to(newNinja.getObjectByName("shoulderR").position, 1, {x:-12.5, z: 3.1, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("bicepR").position, 1, {x: -12, y: -14, z: 10, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("bicepR").rotation, 1, {x:-1.2, z: 0.1, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("elbowR").position, 1, {x:-11, y: -16, z: 15, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("foreArmR").position, 1, {x: -9, y:-15, z:19, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("foreArmR").rotation, 1, {x:-2, z: 0.5, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("handR").position, 1, {x:-6.5, y: -12, z: 24, delay: 1, ease: "back.out(0.2)"});
-    gsap.to(newNinja.getObjectByName("handR").rotation, 1, {x:-2.1, z: 0.5, delay: 1, ease: "back.out(0.2)"});
-    //left arm
-    gsap.to(newNinja.getObjectByName("shoulderL").position, 1, {x:12.5, z: 3.1, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("bicepL").position, 1, {x:  12, y: -16, z: 9, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("bicepL").rotation, 1, {z:1.1, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("elbowL").position, 1, {x:11.2, y: -18, z: 14, delay: 1, ease: "back.out(1.7)"});
-    gsap.to(newNinja.getObjectByName("foreArmL").position, 1, {x:6.5, y: -18, z: 17, delay: 1, ease: "back.out(0.2)"});
-    gsap.to(newNinja.getObjectByName("foreArmL").rotation, 1, {x:-1.8, z: -1, delay: 1, ease: "back.out(0.2)"});
+    // arm grab
+    gsap.to(newNinja.getObjectByName("sword").rotation, {x:-11.5, delay: 1, ease: "back.out(0.2)"});
+
 };
+document.body.onkeypress = function(e){
+    if(e.keyCode == 32){
+        swordSlashLeft()
+        console.log("pressed");
+    }
+}
 // swordSlashLeft();
 
 
